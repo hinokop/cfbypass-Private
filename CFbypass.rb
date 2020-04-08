@@ -33,7 +33,7 @@ end
 options = {:bypass => nil, :massbypass => nil}
 parser = OptionParser.new do|opts|
 
-    opts.banner = "Example: ruby hatcloud.rb -b <your target> or ruby hatcloud.rb --byp <your target>"
+    opts.banner = "Example: ruby CFbypass.rb -b <your target> or ruby CFbypass.rb --byp <your target>"
     opts.on('-b ','--byp ', 'Discover real IP (bypass CloudFlare)', String)do |bypass|
     options[:bypass]=bypass;
     end
@@ -46,7 +46,7 @@ parser = OptionParser.new do|opts|
     opts.on('-h', '--help', 'Help') do
         banner()
         puts opts
-        puts "Example: ruby hatcloud.rb -b discordapp.com or ruby hatcloud.rb --byp discordapp.com"
+        puts "Example: ruby CFbypass.rb -b discordapp.com or ruby CFbypass.rb --byp discordapp.com"
         exit
     end
 end
